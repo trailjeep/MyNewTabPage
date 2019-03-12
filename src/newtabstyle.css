@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 html {
 	background-size: cover !important;
 	-webkit-background-size: cover;
@@ -11,13 +16,58 @@ html {
 }
 
 body {
-    font-family: "OpenSans", Arial, sans-serif;
+	font-family: 'IBM Plex Sans', sans-serif;
+	text-align: center;
+}
+
+#clock {
+	display: inline-block;
+	top: 0;
+	padding: 0.5em 6em;
+	font-family: 'IBM Plex Mono', monospace;
+	line-height: 325%;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 0 0 1em 1em;
+}
+
+#time {
+	display: block;
+	font-size: 5em;
+}
+
+#day {
+	display: block;
+	font-size: 2em;
+}
+
+#date {
+	display: block;
+	font-size: 2em;
+}
+
+.blink {
+   color: #eceff1;
+   -webkit-animation: blink 1000ms step-end infinite;
+   animation: blink 1000ms step-end infinite;
+}
+
+@-webkit-keyframes blink {
+ 	50% {
+		color: #f3f3f3;
+	}
+}
+
+@keyframes blink {
+	50% {
+		color: #f3f3f3;
+	}
 }
 
 #optionsBtn, #refreshBtn {
     opacity: 0.4;
     position: fixed;
-	font-size: 2em;
+	font-size: 3em;
     color: white;
     cursor: pointer;
 }
