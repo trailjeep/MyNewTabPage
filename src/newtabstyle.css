@@ -5,7 +5,7 @@ html {
 	-o-background-size: cover;
 	background: no-repeat center center fixed;
 	background-blend-mode: saturation;
-	transition: linear background-image 1s;
+	transition: linear background-image 1.5s;
 	-webkit-transition-delay: 1s;
 	transition-delay: 1s;
 }

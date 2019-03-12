@@ -8,7 +8,7 @@ window.onload = function() {
 function initBG() {
 	var d = new Date();
 	$('html').css({
-    	'background-image' : 'url(https://source.unsplash.com/featured/?wolf,wolves?'+d.getTime()+')'
+    	'background-image' : 'url(https://source.unsplash.com/featured/?sailboat?t='+d.getTime()+')'
     });
 }
 
@@ -17,7 +17,7 @@ swapBG = function(){
 	myInterval = setInterval(function(){
 		var d = new Date();
 		$('html').css({
-			'background-image' : 'url(https://source.unsplash.com/featured/?wolf,wolves?'+d.getTime()+')'
+			'background-image' : 'url(https://source.unsplash.com/featured/?sailboat?t='+d.getTime()+')'
 		});
 	}, 15000);
 }
