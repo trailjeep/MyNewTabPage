@@ -118,12 +118,12 @@ body {
 
 .linkText {
     display: inline-block;
+	left: 1em;
     opacity: 0;
     color: white;
     position: relative;
     margin: 8px auto 0 auto;
     padding: 5px;
-    text-align: center;
     border-radius: 8px;
     border-color: black;
     /*background-color: rgba(59, 59, 59, 0.8);*/
