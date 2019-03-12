@@ -1,7 +1,17 @@
+html {
+	background-size: cover !important;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background: no-repeat center center fixed;
+	background-blend-mode: saturation;
+	transition: linear background-image 1s;
+	-webkit-transition-delay: 4s;
+	transition-delay: 4s;
+}
+
 body {
     font-family: "OpenSans", Arial, sans-serif;
-    background-size: cover !important;
-    background: no-repeat center top fixed;
 }
 
 #optionsBtn {

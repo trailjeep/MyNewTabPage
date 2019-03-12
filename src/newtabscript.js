@@ -1,11 +1,28 @@
 "use strict";
 
+window.onload = function() {
+	$('html').css({
+             'background-image' : 'url(https://source.unsplash.com/featured/?wolf,wolves)'
+    });
+	swapBG();
+};
+
+function swapBG() {
+	setInterval(function(){
+		var d = new Date();
+		$('html').css({
+			'background-image' : 'url(https://source.unsplash.com/featured/?wolf,wolves?'+d.getTime()+')'
+		});
+	
+	}, 15000);
+}
+
 chrome.storage.local.get({
     'backgroundImage': '', 'sites': [], 'showBookmarkNames': 'hover',
     'bookmarkPosition': 'middle'
 }, function (data) {
     // Set background image
-    document.body.style.backgroundImage = "url('" + data.backgroundImage + "')";
+    //document.body.style.backgroundImage = "url('" + data.backgroundImage + "')";
 
     document.getElementById('optionsBtn').addEventListener('click', function () {
         if (chrome.runtime.openOptionsPage) {
