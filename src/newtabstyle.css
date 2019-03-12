@@ -65,7 +65,7 @@ body {
 }
 
 #optionsBtn, #refreshBtn {
-    opacity: 0.4;
+    opacity: 1;
     position: fixed;
 	font-size: 3em;
     color: white;
@@ -83,12 +83,13 @@ body {
 }
 
 #optionsBtn:hover, #refreshBtn:hover {
-    opacity: 1;
+    opacity: 0.4;
 }
 
 #linksContainer {
-    width: 100%;
-    min-height: 160px;
+    width: 80%;
+    min-height: 180px;
+	margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -96,8 +97,8 @@ body {
 
 .link {
     text-align: center;
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
     transition: all .4s;
     cursor: pointer;
     margin-bottom: 20px;
@@ -107,10 +108,12 @@ body {
     width: 60%;
     height: 60%;
     position: relative;
-    border-radius: 90px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .23);
+    border-radius: 1em;
+    /*box-shadow: 0 3px 6px rgba(0, 0, 0, .23);*/
+	background: rgba(0, 0, 0, 0.2);
     transition: all .3s;
     margin: 0 20%;
+	padding: 10px;
 }
 
 .linkText {
@@ -123,7 +126,8 @@ body {
     text-align: center;
     border-radius: 8px;
     border-color: black;
-    background-color: rgba(59, 59, 59, 0.8);
+    /*background-color: rgba(59, 59, 59, 0.8);*/
+	background: rgba(0, 0, 0, 0.2);
     letter-spacing: 1px;
     transition: all .3s;
 }
