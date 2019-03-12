@@ -6,32 +6,34 @@ html {
 	background: no-repeat center center fixed;
 	background-blend-mode: saturation;
 	transition: linear background-image 1s;
-	-webkit-transition-delay: 4s;
-	transition-delay: 4s;
+	-webkit-transition-delay: 1s;
+	transition-delay: 1s;
 }
 
 body {
     font-family: "OpenSans", Arial, sans-serif;
 }
 
-#optionsBtn {
+#optionsBtn, #refreshBtn {
     opacity: 0.4;
     position: fixed;
-    bottom: 5px;
-    left: 5px;
-    width: 20px;
-    height: 20px;
-    /* color: white; */
+	font-size: 2em;
+    color: white;
     cursor: pointer;
 }
 
-#optionsBtn:hover {
-    opacity: 1;
+#optionsBtn {
+	bottom: 1em;
+    left: 1em;
 }
 
-#optionsBtn svg {
-    width: 100%;
-    height: 100%;
+#refreshBtn {
+	bottom: 1em;
+    right: 1em;
+}
+
+#optionsBtn:hover, #refreshBtn:hover {
+    opacity: 1;
 }
 
 #linksContainer {
