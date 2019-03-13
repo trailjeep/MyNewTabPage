@@ -4,6 +4,7 @@
 }
 
 html {
+	height: 100%;
 	background-size: cover !important;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -16,13 +17,17 @@ html {
 }
 
 body {
+	height: 100%;
 	font-family: 'IBM Plex Sans', sans-serif;
 	text-align: center;
 }
 
 #clock {
-	display: inline-block;
+	position: fixed;
+	/*display: inline-block;*/
 	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
 	padding: 0.5em 6em;
 	font-family: 'IBM Plex Mono', monospace;
 	line-height: 325%;
@@ -87,12 +92,14 @@ body {
 }
 
 #linksContainer {
-    width: 80%;
-    min-height: 180px;
+	height: 100%;
+	width: 80%;
 	margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+	align-items: center;
     justify-content: space-evenly;
+	/*justify-content: center;*/
 }
 
 .link {

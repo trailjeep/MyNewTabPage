@@ -1,5 +1,7 @@
 *, ::before, ::after { box-sizing: border-box; }
 
+.none { display: none; }
+
 [draggable] { user-select: none; }
 
 body {

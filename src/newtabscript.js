@@ -9,7 +9,7 @@ window.onload = function() {
 function initBG() {
 	var d = new Date();
 	$('html').css({
-    	'background-image' : 'url(https://source.unsplash.com/featured/?sailboat?t='+d.getTime()+')'
+    	'background-image' : 'url(https://source.unsplash.com/featured/?wolf&t='+d.getTime()+')'
     });
 }
 
@@ -18,7 +18,7 @@ swapBG = function(){
 	myInterval = setInterval(function(){
 		var d = new Date();
 		$('html').css({
-			'background-image' : 'url(https://source.unsplash.com/featured/?sailboat?t='+d.getTime()+')'
+			'background-image' : 'url(https://source.unsplash.com/featured/?wolf&t='+d.getTime()+')'
 		});
 	}, 15000);
 }
@@ -66,7 +66,7 @@ document.getElementById('refreshBtn').addEventListener('click', function () {
 });
 
 chrome.storage.local.get({
-    'backgroundImage': '', 'sites': [], 'showBookmarkNames': 'hover',
+    'backgroundImage': '', 'sites': [], 'showBookmarkNames': 'always',
     'bookmarkPosition': 'middle'
 }, function (data) {
     // Set background image
@@ -103,11 +103,11 @@ chrome.storage.local.get({
     }
 
     // Update behavior of bookmark names depending on user settings
-    // Default behavior is show names on hover
+    // Default behavior is show names on ---hover--- always
     var showNames = data.showBookmarkNames;
-    if (showNames !== 'hover') {
+    if (showNames !== 'always') {
         var elements = document.querySelectorAll('.linkText');
-        var nameOpacity = showNames === 'never' ? 0 : 1;
+        var nameOpacity = showNames === 'always' ? 0 : 1;
         for (let i = 0; i < elements.length; i++) {
             elements[i].style.opacity = nameOpacity;
         }
@@ -117,7 +117,7 @@ chrome.storage.local.get({
     if (bookmarkPosition === 'top') {
         bookmarkContainer.style.marginTop = '50px';
     } else if (bookmarkPosition === 'middle') {
-        bookmarkContainer.style.marginTop = '45vh';//((window.innerHeight / 2) - 80) + 'px';
+        //bookmarkContainer.style.marginTop = '45vh';//((window.innerHeight / 2) - 80) + 'px';
     } else {
         bookmarkContainer.style.position = 'absolute';
         bookmarkContainer.style.bottom = '10px';

@@ -95,7 +95,7 @@ function checkPermissions() {
 function loadDataFromStorage() {
   chrome.storage.local.get({
     'editImage': '', 'backgroundImage': '', 'sites': [],
-    'icons': [], 'showBookmarkNames': 'hover', 'bookmarkPosition': 'middle'
+    'icons': [], 'showBookmarkNames': 'always', 'bookmarkPosition': 'middle'
   }, function (data) {
     setBackgroundImage(data.backgroundImage);
     var bookmarkList = $('bookmarkList');
@@ -141,11 +141,11 @@ function loadDataFromStorage() {
       case 'never':
         showBookmarkNamesOptions[0].checked = true;
         break;
-      case 'always':
-        showBookmarkNamesOptions[2].checked = true;
-        break;
-      default: // hover
+      case 'hover':
         showBookmarkNamesOptions[1].checked = true;
+        break;
+      default: // always
+        showBookmarkNamesOptions[2].checked = true;
     }
 
     var bookmarkPositionOptions = $('bookmarkPositionButtons').getElementsByTagName('input');
@@ -169,7 +169,8 @@ function setBackgroundImage(imgSrc) {
   var ratio = windowHeight / windowWidth;
   var container = $('bgPreviewContainer');
   var imgElement = $('bgImgPreview');
-  imgElement.src = imgSrc;
+  //imgElement.src = imgSrc;
+  imgElement.src = 'https://source.unsplash.com/featured/?dog,wolf';
   container.style.width = '350px';
   container.style.height = 350 * ratio + 'px';
   if (windowWidth > windowHeight) {
