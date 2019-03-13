@@ -170,7 +170,7 @@ function setBackgroundImage(imgSrc) {
   var container = $('bgPreviewContainer');
   var imgElement = $('bgImgPreview');
   //imgElement.src = imgSrc;
-  imgElement.src = 'https://source.unsplash.com/featured/?dog,wolf';
+  imgElement.src = 'https://source.unsplash.com/featured/1440x960/?dog,wolf';
   container.style.width = '350px';
   container.style.height = 350 * ratio + 'px';
   if (windowWidth > windowHeight) {

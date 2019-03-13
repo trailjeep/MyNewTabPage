@@ -12,8 +12,8 @@ html {
 	background: no-repeat center center fixed;
 	background-blend-mode: saturation;
 	transition: linear background-image 1.5s;
-	-webkit-transition-delay: 1s;
-	transition-delay: 1s;
+	-webkit-transition-delay: 2s;
+	transition-delay: 2s;
 }
 
 body {
