@@ -79,19 +79,21 @@ body {
 #optionsBtn, #refreshBtn {
     opacity: 1;
     position: fixed;
-	font-size: 3em;
+	width: 3em;
+    height: 3em;
+	bottom: 2em;
     color: white;
     cursor: pointer;
 }
 
 #optionsBtn {
-	bottom: 1em;
-    left: 1em;
+    left: 2em;
+	background: url('https://api.iconify.design/ic-settings.svg?color=%23ba3329') no-repeat center center / contain;
 }
 
 #refreshBtn {
-	bottom: 1em;
-    right: 1em;
+    right: 2em;
+	background: url('https://api.iconify.design/ic-refresh.svg?color=%23ba3329') no-repeat center center / contain;
 }
 
 #optionsBtn:hover, #refreshBtn:hover {
