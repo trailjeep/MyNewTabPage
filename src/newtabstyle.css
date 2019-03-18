@@ -77,27 +77,31 @@ body {
 }
 
 #optionsBtn, #refreshBtn {
-    opacity: 1;
     position: fixed;
 	width: 3em;
     height: 3em;
 	bottom: 2em;
-    color: white;
     cursor: pointer;
+	background-color: rgba(0,0,0,0.2);
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 10px;
+	transition: all .4s;
+	border-radius: 50%;
 }
 
 #optionsBtn {
     left: 2em;
-	background: url('https://api.iconify.design/ic-settings.svg?color=%23ba3329') no-repeat center center / contain;
+	background-image: url('https://api.iconify.design/ic-settings.svg?color=%23fff&height=32');
 }
 
 #refreshBtn {
     right: 2em;
-	background: url('https://api.iconify.design/ic-refresh.svg?color=%23ba3329') no-repeat center center / contain;
+	background-image: url('https://api.iconify.design/ic-refresh.svg?color=%23fff&height=32');
 }
 
 #optionsBtn:hover, #refreshBtn:hover {
-    opacity: 0.4;
+	transform: translateY(-10px);
 }
 
 #linksContainer {
