@@ -182,13 +182,13 @@ input::placeholder { color: white; }
     display: inline-block;
 	left: 1em;
     opacity: 0;
+	font-size: larger;
     color: white;
     position: relative;
     margin: 8px auto 0 auto;
     padding: 5px;
     border-radius: 8px;
     border-color: black;
-    /*background-color: rgba(59, 59, 59, 0.8);*/
 	background: rgba(0, 0, 0, 0.2);
     letter-spacing: 1px;
     transition: all .3s;
