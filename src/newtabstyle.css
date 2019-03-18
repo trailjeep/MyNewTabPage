@@ -104,6 +104,48 @@ body {
 	transform: translateY(-10px);
 }
 
+#search {
+	position: fixed;
+    /*display: inline-block;*/
+    bottom: 2em;
+    left: 50%;
+    transform: translate(-50%, 0);
+	width: 50%;
+	color: white;
+}
+
+#searchTerm {
+	background-color: rgba(0,0,0,0.2);
+	color: white;
+	font-size: 2em;
+	padding: 10px 3em;
+	border-radius: 1em 0 0 1em;
+	outline: none;
+	border-left: 1px solid grey;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+}
+
+#searchButton {
+	position: absolute;
+	width: 3em;
+    height: 50px;
+	cursor: pointer;
+	font-size: 2em;
+    background-color: rgba(0,0,0,0.2);
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-image: url('https://api.iconify.design/ic-search.svg?color=%23fff&height=32');
+	padding: 10px;
+    border-radius: 0 1em 1em 0;
+	border: none;
+	border-right: 1px solid grey;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+input::placeholder { color: white; }
+
 #linksContainer {
 	height: 100%;
 	width: 80%;
