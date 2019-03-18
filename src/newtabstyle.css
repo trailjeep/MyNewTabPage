@@ -12,14 +12,21 @@ html {
 	background: no-repeat center center fixed;
 	background-blend-mode: saturation;
 	transition: linear background-image 1.5s;
-	-webkit-transition-delay: 2s;
-	transition-delay: 2s;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
 }
 
 body {
 	height: 100%;
 	font-family: 'IBM Plex Sans', sans-serif;
 	text-align: center;
+}
+
+#preload {
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
 }
 
 #clock {
