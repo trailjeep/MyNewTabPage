@@ -4,12 +4,11 @@ chrome.runtime.onInstalled.addListener(function (details) {
 
     var sites =
         [
-			{ name: 'Search', url: 'https://google.com/', imgUrl: 'google.png', id: 0 },
-            { name: 'Gmail', url: 'https://mail.google.com/', imgUrl: 'email.png', id: 1 },
-			{ name: 'Calendar', url: 'https://calendar.google.com/', imgUrl: 'calendar.png', id: 2 },
-			{ name: 'Contacts', url: 'https://contacts.google.com/', imgUrl: 'contacts.png', id: 3 },
-			{ name: 'News', url: 'https://news.google.com/', imgUrl: 'news.png', id: 4 },
-			{ name: 'Weather', url: 'https://www.google.com/search?q=weather', imgUrl: 'weather.png', id: 5 }
+            { name: 'Gmail', url: 'https://mail.google.com/', imgUrl: 'email.png', id: 0 },
+			{ name: 'Calendar', url: 'https://calendar.google.com/', imgUrl: 'calendar.png', id: 1 },
+			{ name: 'Contacts', url: 'https://contacts.google.com/', imgUrl: 'contacts.png', id: 2 },
+			{ name: 'News', url: 'https://news.google.com/', imgUrl: 'news.png', id: 3 },
+			{ name: 'Weather', url: 'https://www.google.com/search?q=weather', imgUrl: 'weather.png', id: 4 }
         ];
     var icons =
         [
