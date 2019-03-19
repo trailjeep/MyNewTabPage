@@ -39,7 +39,7 @@ body {
 	font-family: 'IBM Plex Mono', monospace;
 	line-height: 325%;
 	color: #fff;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.3);
 	border-radius: 0 0 1em 1em;
 }
 
@@ -82,7 +82,7 @@ body {
     height: 3em;
 	bottom: 2em;
     cursor: pointer;
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.3);
 	background-repeat: no-repeat;
 	background-position: center center;
 	padding: 10px;
@@ -115,7 +115,7 @@ body {
 }
 
 #searchTerm {
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.3);
 	color: white;
 	font-size: 2em;
 	padding: 10px 1em;
@@ -133,7 +133,7 @@ body {
     height: 52px;
 	cursor: pointer;
 	font-size: 2em;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.3);
     background-repeat: no-repeat;
     background-position: center center;
 	background-image: url('https://api.iconify.design/ic-search.svg?color=%23fff&height=32');
@@ -180,8 +180,7 @@ input::placeholder { color: white; }
     height: 60%;
     position: relative;
     border-radius: 1em;
-    /*box-shadow: 0 3px 6px rgba(0, 0, 0, .23);*/
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.3);
     transition: all .3s;
     margin: 0 20%;
 	padding: 10px;
@@ -198,7 +197,7 @@ input::placeholder { color: white; }
     padding: 5px;
     border-radius: 8px;
     border-color: black;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.3);
     letter-spacing: 1px;
     transition: all .3s;
 }
