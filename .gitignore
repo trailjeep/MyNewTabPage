@@ -4,3 +4,5 @@ tasks.txt
 workspace.code-workspace
 **/Chrome Webstore
 **/old screenshots
+src.crx
+src.pem
