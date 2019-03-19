@@ -34,7 +34,7 @@ body {
 	/*display: inline-block;*/
 	top: 0;
 	left: 50%;
-	transform: translate(-50%, 0);
+	transform: translateX(-50%);
 	padding: 0.5em 6em;
 	font-family: 'IBM Plex Mono', monospace;
 	line-height: 325%;
@@ -109,7 +109,7 @@ body {
     /*display: inline-block;*/
     bottom: 2em;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
 	width: 50%;
 	color: white;
 }
@@ -118,7 +118,7 @@ body {
 	background-color: rgba(0,0,0,0.2);
 	color: white;
 	font-size: 2em;
-	padding: 10px 3em;
+	padding: 10px 1em;
 	border-radius: 1em 0 0 1em;
 	outline: none;
 	border-left: 1px solid grey;
