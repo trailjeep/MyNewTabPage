@@ -144,6 +144,10 @@ body {
     border-bottom: 1px solid grey;
 }
 
+#searchButton:hover {
+	transform: translateX(-10px);
+}
+
 input::placeholder { color: white; }
 
 #linksContainer {
