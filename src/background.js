@@ -122,7 +122,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
         readImageArray(icons, 0, function () {
             saveSetting({ 'icons': icons }, function() {
                 chrome.runtime.openOptionsPage(function() { 
-                    alert('Elemental New Tab has been updated. Thank you for your continued support!'); 
+                    alert('MyNewTabPage has been updated. Thank you for your continued support!'); 
                 })
             });
         });

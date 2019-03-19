@@ -1,4 +1,9 @@
-# elemental-new-tab
+# MyNewTabPage
+My customized new tab page extension forked and based on [elemental-new-tab](https://github.com/am283721/elemental-new-tab)
+
+FIXME: Update below.
+
+## elemental-new-tab
 A Chrome extension that overrides the default new tab page with a minimalistic design of customizable links and background image.
 
 ![Screenshot of new tab page](elemental_screenshot.jpg?raw=true "New Tab Screenshot")
