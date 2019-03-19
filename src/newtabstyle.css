@@ -159,6 +159,7 @@ input::placeholder { color: white; }
     transform: translateY(-50%);
 	left: 50%;
 	transform: translateX(-50%);
+	width: 80%;
     display: flex;
     flex-wrap: wrap;
 	align-items: center;
