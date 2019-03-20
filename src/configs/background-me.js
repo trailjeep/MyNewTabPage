@@ -13,10 +13,10 @@ chrome.runtime.onInstalled.addListener(function (details) {
 			{ name: 'Router', url: 'http://192.168.1.1/', imgUrl: 'router.png', id: 6 },
 			{ name: 'Scan', url: 'http://192.168.1.20/#hId-webscanPage', imgUrl: 'printer.png', id: 7 },
 			{ name: 'NAS', url: 'http://taz:8080/cgi-bin/html/login.html', imgUrl: 'ts209.png', id: 8 },
-			{ name: 'Walgreens Refill', url: 'https://img.walgreens.com/pharmacy/order/express-refills.jsp', imgUrl: 'ico.png', id: 9 },
+			{ name: 'Walgreens Refill', url: 'https://img.walgreens.com/pharmacy/order/express-refills.jsp', imgUrl: 'walgreens.png', id: 9 },
 			{ name: 'Baxter Sharesource', url: 'https://na.sharesource.com/', imgUrl: 'baxter.png', id: 10 },
 			{ name: 'Baxter Driver Alert', url: 'https://driveralert.baxter.com/', imgUrl: 'baxter.png', id: 11 },
-			{ name: 'Google Keep', url: 'https://keep.google.com/', imgUrl: 'ico.png', id: 12 },
+			{ name: 'Google Keep', url: 'https://keep.google.com/', imgUrl: 'keep.png', id: 12 },
 			{ name: 'Google Drive', url: 'https://drive.google.com/drive/', imgUrl: 'drive.png', id: 13 },
 			{ name: 'Dropbox', url: 'https://www.dropbox.com/h', imgUrl: 'dropbox.png', id: 14 }
         ];
@@ -50,7 +50,9 @@ chrome.runtime.onInstalled.addListener(function (details) {
 			{ name: 'Google', imgUrl: 'google.png' },
 			{ name: 'IMDb', imgUrl: 'imdb.png' },
 			{ name: 'New', imgUrl: 'news.png' },
-			{ name: 'Wikipedia', imgUrl: 'wikipedia.png' }
+			{ name: 'Wikipedia', imgUrl: 'wikipedia.png' },
+            { name: 'Walgreens', imgUrl: 'walgreens.png' },
+            { name: 'Google Keep', imgUrl: 'keep.png' }
         ];
     var backgroundImage = '/images/bg.jpg';
     var editImage = '/images/edit.png';

@@ -40,7 +40,9 @@ chrome.runtime.onInstalled.addListener(function (details) {
 			{ name: 'Google', imgUrl: 'google.png' },
 			{ name: 'IMDb', imgUrl: 'imdb.png' },
 			{ name: 'New', imgUrl: 'news.png' },
-			{ name: 'Wikipedia', imgUrl: 'wikipedia.png' }
+			{ name: 'Wikipedia', imgUrl: 'wikipedia.png' },
+            { name: 'Walgreens', imgUrl: 'walgreens.png' },
+            { name: 'Google Keep', imgUrl: 'keep.png' }
         ];
     var backgroundImage = '/images/bg.jpg';
     var editImage = '/images/edit.png';
