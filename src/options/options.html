@@ -17,9 +17,9 @@
       <h4>Show Bookmark Name</h4>
       <div id="bookmarkNameButtons" class="">
         <input type="radio" name="showBookmarkNames" value="never" id="neverShow" />
-        <label for="never">Never</label><br>
+        <label for="never">Never</label>
         <input type="radio" name="showBookmarkNames" value="hover" id="showOnHover" />
-        <label for="hover">On Hover</label><br>
+        <label for="hover">On Hover</label>
         <input type="radio" name="showBookmarkNames" value="always" id="alwaysShow" />
         <label for="always">Always</label>
       </div>
@@ -28,17 +28,19 @@
 	  <h4>Keywords</h4>
 	  <div id="backgroundKeyword">
 		  <input type="text" value="wolf" id="keyword" />
+		  <button id="bgopts">Save</button>
 	  </div>
 	  <h4>Refresh Seconds</h4>
-	  <div id="backgroundRefresh">
-		  <select>
-			  <option value="15">15</option>
-			  <option value="30">30</option>
-			  <option value="45">45</option>
-			  <option value="60">60</option>
-		  </select>
-	  </div>
-	  <button id="bgopts">Save</button> 
+	  <div id="backgroundRefresh" class="">
+         <input type="radio" name="backgroundRefresh" value="15" id="15" />
+         <label for="15">15</label>
+         <input type="radio" name="backgroundRefresh" value="30" id="30" />
+         <label for="30">30</label>
+         <input type="radio" name="backgroundRefresh" value="45" id="45" />
+         <label for="45">45</label>
+		 <input type="radio" name="backgroundRefresh" value="60" id="60" />
+         <label for="60">60</label>
+       </div>
 
       <h4 class="none">Bookmark Position</h4>
       <div id="bookmarkPositionButtons" class="none">
