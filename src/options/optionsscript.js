@@ -95,7 +95,7 @@ function checkPermissions() {
 function loadDataFromStorage() {
   chrome.storage.local.get({
     'editImage': '', 'backgroundImage': '', 'sites': [],
-    'icons': [], 'showBookmarkNames': 'always', 'bookmarkPosition': 'middle'
+    'icons': [], 'showBookmarkNames': 'always', 'bookmarkPosition': 'middle', 'backgroundRefresh': '30'
   }, function (data) {
     setBackgroundImage(data.backgroundImage);
     var bookmarkList = $('bookmarkList');
@@ -147,6 +147,22 @@ function loadDataFromStorage() {
       default: // always
         showBookmarkNamesOptions[2].checked = true;
     }
+
+	var backgroundRefreshOptions = $('backgroundRefreshButtons').getElementsByTagName('input');
+	var backgroundRefresh = data.backgroundRefresh;
+	switch (backgroundRefresh) {
+		case '30':
+			backgroundRefreshOptions[1].checked = true;
+            break;
+		case '45':
+            backgroundRefreshOptions[2].checked = true;
+            break;
+		case '60':
+            backgroundRefreshOptions[3].checked = true;
+            break;
+		default: // 15
+			backgroundRefreshOptions[0].checked = true;
+	}
 
     var bookmarkPositionOptions = $('bookmarkPositionButtons').getElementsByTagName('input');
     var bookmarkPosition = data.bookmarkPosition;

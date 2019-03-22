@@ -116,7 +116,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
         chrome.storage.local.set({
             'sites': sites, 'icons': icons, 'backgroundImage': backgroundImage,
             'editImage': editImage, 'showBookmarkNames': 'hover',
-            'bookmarkPosition': 'middle'
+            'bookmarkPosition': 'middle', 'backgroundRefresh': '15'
         }, function () { });
     }
 

@@ -4,12 +4,13 @@ var bgurl = 'https://source.unsplash.com/featured/1440x960/?';
 var bgkwd = 'wolf';
 var element1 = document.getElementById("preload");
 var element2 = document.getElementById("bg");
+var backgroundRefresh;
 
 window.onload = function() {
-	element1.style.background = 'url('+bgurl+bgkwd+')';
-	initBG();
-	displayClock();
-	swapBG();
+	//element1.style.background = 'url('+bgurl+bgkwd+')';
+	//initBG();
+	//displayClock();
+	//swapBG();
 };
 
 function initBG() {
@@ -24,7 +25,8 @@ swapBG = function(){
 		var d = new Date();
 		element2.style.background = document.defaultView.getComputedStyle(element1).background;
 		element1.style.background = 'url('+bgurl+bgkwd+'&t='+d.getTime()+')';
-	}, 15000);
+		console.log(backgroundRefresh);
+	}, backgroundRefresh * 1000);
 }
 
 function displayClock() {
@@ -71,8 +73,15 @@ document.getElementById('refreshBtn').addEventListener('click', function () {
 
 chrome.storage.local.get({
     'backgroundImage': '', 'sites': [], 'showBookmarkNames': 'always',
-    'bookmarkPosition': 'middle'
+    'bookmarkPosition': 'middle',
+	'backgroundRefresh': '15'
 }, function (data) {
+	backgroundRefresh = data.backgroundRefresh;
+	console.log(backgroundRefresh);
+	element1.style.background = 'url('+bgurl+bgkwd+')';
+	initBG();
+	displayClock();
+	swapBG();
     // Set background image
     //document.body.style.backgroundImage = "url('" + data.backgroundImage + "')";
 
