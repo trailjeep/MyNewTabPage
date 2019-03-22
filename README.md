@@ -1,6 +1,8 @@
 # MyNewTabPage
 My customized new tab page extension forked and based on [elemental-new-tab](https://github.com/am283721/elemental-new-tab)
 
+[Releases](/releases)
+
 Additions:
 - Background from Unsplash.com based on user provided keyword.
 - Background refresh can be set to 15,30,45, or 60 seconds.
