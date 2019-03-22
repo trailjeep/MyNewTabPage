@@ -1,6 +1,7 @@
 "use strict";
 
 var defaultIconUrl = '', currentBookmark, selectedIcon, selectedBookmark;
+var backgroundKeyword;
 const MAX_TITLE_LENGTH = 70;
 
 function $(id) { return document.getElementById(id); }
@@ -34,6 +35,7 @@ function addEventListeners() {
   newListener('deleteBookmarkBtn', 'click', deleteBookmark);
   newListener('cancelEditBookmarkBtn', 'click', hideEditMenu);
   newListener('saveBookmarkBtn', 'click', saveBookmark);
+  newListener('saveBackgroundKeyword', 'click', saveBackgroundKeyword);
   newListener('editIconBtn', 'click', function () { showModal(this); });
   newListener('newBookmarkBtn', 'click', function () { showEditMenu(this, true); });
   newListener('iconModalSaveBtn', 'click', saveIcon);
@@ -95,7 +97,8 @@ function checkPermissions() {
 function loadDataFromStorage() {
   chrome.storage.local.get({
     'editImage': '', 'backgroundImage': '', 'sites': [],
-    'icons': [], 'showBookmarkNames': 'always', 'bookmarkPosition': 'middle', 'backgroundRefresh': '30'
+    'icons': [], 'showBookmarkNames': 'always', 'bookmarkPosition': 'middle',
+	'backgroundRefresh': '30', 'backgroundKeyword': 'dog'
   }, function (data) {
     setBackgroundImage(data.backgroundImage);
     var bookmarkList = $('bookmarkList');
@@ -148,6 +151,9 @@ function loadDataFromStorage() {
         showBookmarkNamesOptions[2].checked = true;
     }
 
+	var backgroundKeyword = data.backgroundKeyword;
+	document.getElementById('backgroundKeywordInput').value = backgroundKeyword;
+
 	var backgroundRefreshOptions = $('backgroundRefreshButtons').getElementsByTagName('input');
 	var backgroundRefresh = data.backgroundRefresh;
 	switch (backgroundRefresh) {
@@ -196,6 +202,11 @@ function setBackgroundImage(imgSrc) {
     imgElement.style.width = 'auto';
     imgElement.style.height = '100%';
   }
+}
+
+function saveBackgroundKeyword() {
+	var backgroundKeyword = document.getElementById("backgroundKeywordInput").value;
+	chrome.storage.local.set({'backgroundKeyword': backgroundKeyword});
 }
 
 function saveBookmark() {
