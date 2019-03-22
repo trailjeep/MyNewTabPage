@@ -26,7 +26,8 @@ chrome.runtime.onInstalled.addListener(function (details) {
 			{ name: 'CTMLS', url: 'https://idp.ctmls.safemls.net/idp/Authn/UserPassword', imgUrl: 'ctmls.png', id: 19 },
 			{ name: 'Homesnap', url: 'https://www.homesnap.com/', imgUrl: 'homesnap.png', id: 20 },
 			{ name: 'Photos', url: 'https://photos.google.com/', imgUrl: 'photos.png', id: 21 },
-			{ name: 'Mahjong', url: 'http://www.247mahjong.com/?chromestore=1', imgUrl: 'mahjong.png', id: 22 }
+			{ name: 'Mahjong', url: 'http://www.247mahjong.com/?chromestore=1', imgUrl: 'mahjong.png', id: 22 },
+			{ name: 'History', url: 'chrome://history/', imgUrl: 'history.png', id: 23 }
         ];
     var icons =
         [
@@ -60,7 +61,12 @@ chrome.runtime.onInstalled.addListener(function (details) {
 			{ name: 'New', imgUrl: 'news.png' },
 			{ name: 'Wikipedia', imgUrl: 'wikipedia.png' },
             { name: 'Walgreens', imgUrl: 'walgreens.png' },
-            { name: 'Google Keep', imgUrl: 'keep.png' }
+            { name: 'Google Keep', imgUrl: 'keep.png' },
+			{ name: 'History', imgUrl: 'history.png' },
+			{ name: 'Instagram', imgUrl: 'instagram.png' },
+			{ name: 'Mastodon', imgUrl: 'mastodon.png' },
+			{ name: 'Pinterest', imgUrl: 'pinterest.png' },
+			{ name: 'Reddit', imgUrl: 'reddit.png' }
         ];
     var backgroundImage = '/images/bg.jpg';
     var editImage = '/images/edit.png';
