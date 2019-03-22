@@ -10,7 +10,7 @@ Additions:
 - Time & date.
 - Searchbar (DuckDuckGo.com)
 
-![Screenshot of new tab page](elemental_screenshot.jpg?raw=true "New Tab Screenshot")
+![Screenshot of new tab page](mynewtabpage_screenshot.jpg?raw=true "New Tab Screenshot")
 
 Options page for updating background and editing/adding/deleting bookmarks.
 
