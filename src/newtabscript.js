@@ -5,6 +5,7 @@ var backgroundKeyword = 'wolf';
 var element1 = document.getElementById("preload");
 var element2 = document.getElementById("bg");
 var backgroundRefresh;
+var backgroundKeyword;
 
 window.onload = function() {
 };
@@ -21,7 +22,6 @@ swapBG = function(){
 		var d = new Date();
 		element2.style.background = document.defaultView.getComputedStyle(element1).background;
 		element1.style.background = 'url('+backgroundUrl+backgroundKeyword+'&t='+d.getTime()+')';
-		console.log(backgroundRefresh);
 	}, backgroundRefresh * 1000);
 }
 
@@ -70,9 +70,11 @@ document.getElementById('refreshBtn').addEventListener('click', function () {
 chrome.storage.local.get({
     'backgroundImage': '', 'sites': [], 'showBookmarkNames': 'always',
     'bookmarkPosition': 'middle',
-	'backgroundRefresh': '15'
+	'backgroundRefresh': '15',
+	'backgroundKeyword': 'dog'
 }, function (data) {
 	backgroundRefresh = data.backgroundRefresh;
+	backgroundKeyword = data.backgroundKeyword;
 	element1.style.background = 'url('+backgroundUrl+backgroundKeyword+')';
 	initBG();
 	displayClock();
