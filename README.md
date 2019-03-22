@@ -1,10 +1,12 @@
 # MyNewTabPage
 My customized new tab page extension forked and based on [elemental-new-tab](https://github.com/am283721/elemental-new-tab)
 
-FIXME: Update below.
-
-## elemental-new-tab
-A Chrome extension that overrides the default new tab page with a minimalistic design of customizable links and background image.
+Additions:
+- Background from Unsplash.com based on user provided keyword.
+- Background refresh can be set to 15,30,45, or 60 seconds.
+- Background manual refresh button.
+- Time & date.
+- Searchbar (DuckDuckGo.com)
 
 ![Screenshot of new tab page](elemental_screenshot.jpg?raw=true "New Tab Screenshot")
 
