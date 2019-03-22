@@ -100,6 +100,8 @@ function loadDataFromStorage() {
     'icons': [], 'showBookmarkNames': 'always', 'bookmarkPosition': 'middle',
 	'backgroundRefresh': '30', 'backgroundKeyword': 'dog'
   }, function (data) {
+	backgroundKeyword = data.backgroundKeyword;
+    document.getElementById('backgroundKeywordInput').value = backgroundKeyword;
     setBackgroundImage(data.backgroundImage);
     var bookmarkList = $('bookmarkList');
     var newBookmarkBtn = $('newBookmarkBtn');
@@ -151,8 +153,8 @@ function loadDataFromStorage() {
         showBookmarkNamesOptions[2].checked = true;
     }
 
-	var backgroundKeyword = data.backgroundKeyword;
-	document.getElementById('backgroundKeywordInput').value = backgroundKeyword;
+	//var backgroundKeyword = data.backgroundKeyword;
+	//document.getElementById('backgroundKeywordInput').value = backgroundKeyword;
 
 	var backgroundRefreshOptions = $('backgroundRefreshButtons').getElementsByTagName('input');
 	var backgroundRefresh = data.backgroundRefresh;
@@ -192,7 +194,7 @@ function setBackgroundImage(imgSrc) {
   var container = $('bgPreviewContainer');
   var imgElement = $('bgImgPreview');
   //imgElement.src = imgSrc;
-  imgElement.src = 'https://source.unsplash.com/featured/1440x960/?dog,wolf';
+  imgElement.src = 'https://source.unsplash.com/featured/1440x960/?'+backgroundKeyword;
   container.style.width = '350px';
   container.style.height = 350 * ratio + 'px';
   if (windowWidth > windowHeight) {
