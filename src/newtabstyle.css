@@ -32,48 +32,39 @@ body {
 #clock {
 	position: fixed;
 	/*display: inline-block;*/
-	top: 0;
+	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
-	padding: 0.5em 6em;
-	/*font-family: 'Jura', sans-serif;*/
+	padding: 2.5em 5em 0.25em 5em;
 	line-height: 325%;
 	color: #fff;
 	background: rgba(0, 0, 0, 0.3);
-	border-radius: 0 0 1em 1em;
+	border-radius: 1em 1em 0 0;
 }
 
 #time {
-	display: block;
+	display: inline-block;
 	font-size: 5em;
 }
 
 #day {
-	display: block;
+	display: inline-block;
 	font-size: 2em;
+	padding-right: 1em;
 }
 
 #date {
-	display: block;
+	display: inline-block;
 	font-size: 2em;
+	padding-left: 1em;
 }
 
-.blink {
-   color: #eceff1;
-   -webkit-animation: blink 1000ms step-end infinite;
-   animation: blink 1000ms step-end infinite;
-}
+.blink { animation: blinker 3s step-start infinite; }
 
-@-webkit-keyframes blink {
- 	50% {
-		color: #f3f3f3;
-	}
-}
-
-@keyframes blink {
-	50% {
-		color: #f3f3f3;
-	}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 #optionsBtn, #refreshBtn {
@@ -107,7 +98,7 @@ body {
 #search {
 	position: fixed;
     /*display: inline-block;*/
-    bottom: 2em;
+    top: 2em;
     left: 50%;
     transform: translateX(-50%);
 	width: 50%;

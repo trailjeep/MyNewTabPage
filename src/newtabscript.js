@@ -38,7 +38,7 @@ function displayClock() {
     var ampm = getAMPM(h);
     m = checkTimeProperty(m); // Add leading 0 for minutes > 10
     h = convertToTwelveHr(h); // Convert to 12hr format
-    document.getElementById("clock").innerHTML = "<span id='day'>" + weekday + "</span><span id='time'>" + h + "<span class='blink'>:</span>" + m + " " + ampm + "</span><span id='date'>" + month + " " + monthday + ", " + year;
+    document.getElementById("clock").innerHTML = "<span id='day'>" + weekday + "</span><span id='time'>" + h + "<span class='blink'>:</span>" + m + " " + ampm + "</span><span id='date'>" + month + " " + monthday + ", " + year + '</span>';
     var t = setTimeout(displayClock, 15000); // Run every 15 seconds
 }
 function checkTimeProperty(m) {
