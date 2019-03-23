@@ -31,15 +31,16 @@ body {
 
 #clock {
 	position: fixed;
-	/*display: inline-block;*/
-	bottom: 0;
+	bottom: 2em;
 	left: 50%;
 	transform: translateX(-50%);
-	padding: 2.5em 5em 0.25em 5em;
-	line-height: 325%;
 	color: #fff;
 	background: rgba(0, 0, 0, 0.3);
-	border-radius: 2em 2em 0 0;
+	border-radius: 3em;
+	display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
 }
 
 #time {
@@ -50,13 +51,15 @@ body {
 #day {
 	display: inline-block;
 	font-size: 2em;
-	padding-right: 1em;
+	padding-right: 0.5em;
+	padding-left: 1.5em;
 }
 
 #date {
 	display: inline-block;
 	font-size: 2em;
-	padding-left: 1em;
+	padding-right: 1.5em;
+	padding-left: 0.5em;
 }
 
 .blink { animation: blinker 3s step-start infinite; }
@@ -109,26 +112,31 @@ body {
 	padding: 10px 1em;
 	border-radius: 1em 0 0 1em;
 	outline: none;
+	border: none;
+	/*
 	border-left: 2px solid grey;
 	border-top: 2px solid grey;
 	border-bottom: 2px solid grey;
 	border-right: none;
+	*/
 }
 
 #searchButton {
 	position: absolute;
 	width: 3em;
-    height: 52px;
+    height: 48px;
 	cursor: pointer;
 	font-size: 2em;
 	background: url('images/search.png') center center / 32px 32px no-repeat rgba(0,0,0,0.3);
 	padding: 10px;
     border-radius: 0 1em 1em 0;
 	border: none;
+	/*
 	border-right: 2px solid grey;
     border-top: 2px solid grey;
     border-bottom: 2px solid grey;
 	border-left: none;
+	*/
 	transition: all .4s;
 }
 
