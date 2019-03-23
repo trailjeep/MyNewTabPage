@@ -20,6 +20,10 @@ body {
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 #preload {
@@ -38,9 +42,9 @@ body {
 	background: rgba(0, 0, 0, 0.3);
 	border-radius: 3em;
 	display: flex;
-     flex-wrap: wrap;
-     align-items: center;
-     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 #time {
@@ -97,7 +101,6 @@ body {
 
 #search {
 	position: fixed;
-    /*display: inline-block;*/
     top: 2em;
     left: 50%;
     transform: translateX(-52%);
@@ -113,12 +116,6 @@ body {
 	border-radius: 1em 0 0 1em;
 	outline: none;
 	border: none;
-	/*
-	border-left: 2px solid grey;
-	border-top: 2px solid grey;
-	border-bottom: 2px solid grey;
-	border-right: none;
-	*/
 }
 
 #searchButton {
@@ -131,12 +128,6 @@ body {
 	padding: 10px;
     border-radius: 0 1em 1em 0;
 	border: none;
-	/*
-	border-right: 2px solid grey;
-    border-top: 2px solid grey;
-    border-bottom: 2px solid grey;
-	border-left: none;
-	*/
 	transition: all .4s;
 }
 
@@ -147,11 +138,6 @@ body {
 input::placeholder { color: white; }
 
 #linksContainer {
-	position: fixed;
-    top: 25%;
-    transform: translateY(-50%);
-	left: 50%;
-	transform: translateX(-50%);
 	width: 80%;
     display: flex;
     flex-wrap: wrap;
