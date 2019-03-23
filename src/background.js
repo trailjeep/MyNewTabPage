@@ -9,25 +9,11 @@ chrome.runtime.onInstalled.addListener(function (details) {
 			{ name: 'Contacts', url: 'https://contacts.google.com/', imgUrl: 'contacts.png', id: 2 },
 			{ name: 'News', url: 'https://news.google.com/', imgUrl: 'news.png', id: 3 },
 			{ name: 'Weather', url: 'https://www.google.com/search?q=weather', imgUrl: 'weather.png', id: 4 },
-			{ name: 'Sacco.me', url: 'https://sacco.me/', imgUrl: 'paw.png', id: 5 },
-			{ name: 'Router', url: 'http://192.168.1.1/', imgUrl: 'router.png', id: 6 },
-			{ name: 'Scan', url: 'http://192.168.1.20/#hId-webscanPage', imgUrl: 'printer.png', id: 7 },
-			{ name: 'NAS', url: 'http://taz:8080/cgi-bin/html/login.html', imgUrl: 'ts209.png', id: 8 },
-			{ name: 'Walgreens Refill', url: 'https://img.walgreens.com/pharmacy/order/express-refills.jsp', imgUrl: 'walgreens.png', id: 9 },
-			{ name: 'Baxter Sharesource', url: 'https://na.sharesource.com/', imgUrl: 'baxter.png', id: 10 },
-			{ name: 'Baxter Driver Alert', url: 'https://driveralert.baxter.com/', imgUrl: 'baxter.png', id: 11 },
-			{ name: 'Google Keep', url: 'https://keep.google.com/', imgUrl: 'keep.png', id: 12 },
-			{ name: 'Google Drive', url: 'https://drive.google.com/drive/', imgUrl: 'drive.png', id: 13 },
-			{ name: 'Dropbox', url: 'https://www.dropbox.com/h', imgUrl: 'dropbox.png', id: 14 },
-			{ name: 'North Cove Yacht Club', url: 'http://www.northcoveyc.com/', imgUrl: 'ncyc.png', id: 15 },
-			{ name: 'ESPN', url: 'http://www.espn.com/', imgUrl: 'espn.png', id: 16 },
-			{ name: 'Pearce Email', url: 'https://apps.rackspace.com/index.php', imgUrl: 'pearce.png', id: 17 },
-			{ name: 'Pearce', url: 'https://www.hpearce.com/', imgUrl: 'pearce.png', id: 18 },
-			{ name: 'CTMLS', url: 'https://idp.ctmls.safemls.net/idp/Authn/UserPassword', imgUrl: 'ctmls.png', id: 19 },
-			{ name: 'Homesnap', url: 'https://www.homesnap.com/', imgUrl: 'homesnap.png', id: 20 },
-			{ name: 'Photos', url: 'https://photos.google.com/', imgUrl: 'photos.png', id: 21 },
-			{ name: 'Mahjong', url: 'http://www.247mahjong.com/?chromestore=1', imgUrl: 'mahjong.png', id: 22 },
-			{ name: 'History', url: 'chrome://history/', imgUrl: 'history.png', id: 23 }
+			{ name: 'Google Keep', url: 'https://keep.google.com/', imgUrl: 'keep.png', id: 5 },
+			{ name: 'Google Drive', url: 'https://drive.google.com/drive/', imgUrl: 'drive.png', id: 6 },
+			{ name: 'Dropbox', url: 'https://www.dropbox.com/h', imgUrl: 'dropbox.png', id: 7 },
+			{ name: 'Photos', url: 'https://photos.google.com/', imgUrl: 'photos.png', id: 8 },
+			{ name: 'History', url: 'chrome://history/', imgUrl: 'history.png', id: 9 }
         ];
     var icons =
         [
