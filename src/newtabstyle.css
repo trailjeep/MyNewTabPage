@@ -39,7 +39,7 @@ body {
 	line-height: 325%;
 	color: #fff;
 	background: rgba(0, 0, 0, 0.3);
-	border-radius: 1em 1em 0 0;
+	border-radius: 2em 2em 0 0;
 }
 
 #time {
@@ -73,9 +73,6 @@ body {
     height: 3em;
 	bottom: 2em;
     cursor: pointer;
-	background-color: rgba(0,0,0,0.3);
-	background-repeat: no-repeat;
-	background-position: center center;
 	padding: 10px;
 	transition: all .4s;
 	border-radius: 50%;
@@ -83,12 +80,12 @@ body {
 
 #optionsBtn {
     left: 2em;
-	background-image: url('https://api.iconify.design/ic-settings.svg?color=%23fff&height=32');
+	background: url('images/settings.png') center center / 32px 32px no-repeat rgba(0,0,0,0.3);
 }
 
 #refreshBtn {
     right: 2em;
-	background-image: url('https://api.iconify.design/ic-refresh.svg?color=%23fff&height=32');
+	background: url('images/refresh.png') center center / 32px 32px no-repeat rgba(0,0,0,0.3);
 }
 
 #optionsBtn:hover, #refreshBtn:hover {
@@ -124,10 +121,7 @@ body {
     height: 52px;
 	cursor: pointer;
 	font-size: 2em;
-    background-color: rgba(0,0,0,0.3);
-    background-repeat: no-repeat;
-    background-position: center center;
-	background-image: url('https://api.iconify.design/ic-search.svg?color=%23fff&height=32');
+	background: url('images/search.png') center center / 32px 32px no-repeat rgba(0,0,0,0.3);
 	padding: 10px;
     border-radius: 0 1em 1em 0;
 	border: none;
