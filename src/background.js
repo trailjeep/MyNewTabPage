@@ -13,7 +13,8 @@ chrome.runtime.onInstalled.addListener(function (details) {
 			{ name: 'Google Drive', url: 'https://drive.google.com/drive/', imgUrl: 'drive.png', id: 6 },
 			{ name: 'Dropbox', url: 'https://www.dropbox.com/h', imgUrl: 'dropbox.png', id: 7 },
 			{ name: 'Photos', url: 'https://photos.google.com/', imgUrl: 'photos.png', id: 8 },
-			{ name: 'History', url: 'chrome://history/', imgUrl: 'history.png', id: 9 }
+			{ name: 'History', url: 'chrome://history/', imgUrl: 'history.png', id: 9 },
+			{ name: 'Bookmarks', url: 'chrome://bookmarks/', imgUrl: 'bookmarks.png', id: 10 }
         ];
     var icons =
         [
@@ -49,6 +50,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
             { name: 'Walgreens', imgUrl: 'walgreens.png' },
             { name: 'Google Keep', imgUrl: 'keep.png' },
 			{ name: 'History', imgUrl: 'history.png' },
+			{ name: 'Bookmarks', imgUrl: 'bookmarks.png' },
 			{ name: 'Instagram', imgUrl: 'instagram.png' },
 			{ name: 'Mastodon', imgUrl: 'mastodon.png' },
 			{ name: 'Pinterest', imgUrl: 'pinterest.png' },
