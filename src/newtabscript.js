@@ -68,7 +68,7 @@ document.getElementById('refreshBtn').addEventListener('click', function () {
 });
 
 chrome.storage.local.get({
-    'backgroundImage': '', 'sites': [], 'showBookmarkNames': 'always',
+    'backgroundImage': '', 'sites': [], 'showBookmarkNames': 'hover',
     'bookmarkPosition': 'middle',
 	'backgroundRefresh': '15',
 	'backgroundKeyword': 'dog'
@@ -115,9 +115,9 @@ chrome.storage.local.get({
     // Update behavior of bookmark names depending on user settings
     // Default behavior is show names on ---hover--- always
     var showNames = data.showBookmarkNames;
-    if (showNames !== 'always') {
+    if (showNames !== 'hover') {
         var elements = document.querySelectorAll('.linkText');
-        var nameOpacity = showNames === 'always' ? 0 : 1;
+        var nameOpacity = showNames === 'never' ? 0 : 1;
         for (let i = 0; i < elements.length; i++) {
             elements[i].style.opacity = nameOpacity;
         }
