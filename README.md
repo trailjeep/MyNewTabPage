@@ -10,16 +10,16 @@ Additions:
 - Time & date.
 - Searchbar (DuckDuckGo.com)
 
-![Screenshot of new tab page](main_ss.jpg?raw=true "New Tab Screenshot")
+![Screenshot of new tab page](main_ss.png?raw=true "New Tab Screenshot")
 
 Options page for updating background and editing/adding/deleting bookmarks.
 
-![Screenshot of options page](options_ss.jpg?raw=true "Options Screenshot")
+![Screenshot of options page](options_ss.png?raw=true "Options Screenshot")
 
 Small library of icons for popular sites. Also an option to upload your own images.
 
-![Screenshot of options modal](icon_library_ss.jpg?raw=true "Icon Library Screenshot")
+![Screenshot of options modal](icon_library_ss.png?raw=true "Icon Library Screenshot")
 
 Ver 0.2 adds functionality to scan a remote site for favicons to use as bookmark icon
 
-![Screenshot of scan icon functionality](icon_scan_ss.jpg?raw=true "Scan Icons Screenshot")
+![Screenshot of scan icon functionality](icon_scan_ss.png?raw=true "Scan Icons Screenshot")
