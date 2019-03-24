@@ -153,9 +153,6 @@ function loadDataFromStorage() {
         showBookmarkNamesOptions[2].checked = true;
     }
 
-	//var backgroundKeyword = data.backgroundKeyword;
-	//document.getElementById('backgroundKeywordInput').value = backgroundKeyword;
-
 	var backgroundRefreshOptions = $('backgroundRefreshButtons').getElementsByTagName('input');
 	var backgroundRefresh = data.backgroundRefresh;
 	switch (backgroundRefresh) {
@@ -193,8 +190,7 @@ function setBackgroundImage(imgSrc) {
   var ratio = windowHeight / windowWidth;
   var container = $('bgPreviewContainer');
   var imgElement = $('bgImgPreview');
-  //imgElement.src = imgSrc;
-  imgElement.src = 'https://source.unsplash.com/featured/1440x960/?'+backgroundKeyword;
+  imgElement.src = 'https://source.unsplash.com/featured/480x270/?'+backgroundKeyword;
   container.style.width = '350px';
   container.style.height = 350 * ratio + 'px';
   if (windowWidth > windowHeight) {
@@ -209,6 +205,7 @@ function setBackgroundImage(imgSrc) {
 function saveBackgroundKeyword() {
 	var backgroundKeyword = document.getElementById("backgroundKeywordInput").value;
 	chrome.storage.local.set({'backgroundKeyword': backgroundKeyword});
+	location.reload(false);
 }
 
 function saveBookmark() {
